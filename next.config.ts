@@ -1,7 +1,14 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  rewrites: async () => {
+    return [
+      {
+        source: "/gtag/js",
+        destination: "https://www.googletagmanager.com/gtag/js",
+      },
+    ];
+  },
 };
 
 export default nextConfig;
