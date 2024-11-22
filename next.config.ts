@@ -6,6 +6,8 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+  basePath: "/neak.io",
+  assetPrefix: "/neak.io",
 };
 
 export default nextConfig;
